@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+		<style>
+		  .Text {
+				border: solid;
+				margin-right: 82%;
+				margin-bottom: 1%;
+				margin-left: 2%;
+				font-family:sans-serif;
+			}
+
+			.Fancify {
+				border: solid;
+				margin-right: 75%;
+			}
+
+			.header {
+				margin-left: 3.5%;
+			}
+
+			div {
+				resize: none;
+			}
+		</style>
+
+		<!-- link to your script file here -->
+		<script src="fancifymytext.js"></script>
+		
+	</head>
+
+	<body>
+		<h1 class="header" >Fancify my Text</h1>
+		<div>
+			<fieldset class="Text">
+			<textarea name="in" id="text" rows="4" cols="30">Text</textarea>
+			</fieldset>
+			<fieldset class="Fancify">
+				<button onclick="toUpper()">Moo</button>
+				<button onclick="clk()">Bigger!</button>
+				<input onclick="fancy()" onchange="change()" type="radio" id="fancy" name="fancy">
+				<label for="fancy">FancyShmancy</label>
+				<input onclick="boring()" type="radio" id="boring" name="boring" value="boring">
+				<label for="boring">BoringBetty</label>
+			</fieldset>
+		</div>
+
+		
+		
+	</body>
+</html>
